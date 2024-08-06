@@ -1,4 +1,17 @@
-/*--This code is created with the Combining CSS Selectors--*/
+/*--Color customisation--*/
+:root {
+    ---maninggi-machu: #f0f0f0;
+    ---kakhalgi-machu: #dad8d8;
+    ---angangba-machu: red;
+    ---angouba-machu: white;
+    ---amuba-machu: black;
+    ---hangampal-machu: yellow;
+    ---moirang-machu: #83092C;
+    ---petuk-machu: #7919E4;
+    ---sangbanaba-machu: #10F0FF;
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +19,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: var(---maninggi-machu);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -15,15 +32,6 @@ h1 {
     margin: 0%;
 }
 
-
-p {
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 2rem;
-    margin: 0%;
-}
-
-
 h2 {
     font-family: 'Noto Sans Meetei Mayek', sans-serif;
     font-size: 1.6rem;
@@ -31,13 +39,18 @@ h2 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    margin: 0%;
+}
+
 .khuyek h2 {
     font-size: 2rem;
     font-weight: 900;
 }
 
-/* ***************************************************************************************** */
-/* v02 */
 .kangleipakki-firan {
     width: 100%;
     height: 100vh;
@@ -47,7 +60,7 @@ h2 {
 .heading {
     text-align: center;
     padding: 1.5rem 5rem;
-    background-color: #dad8d8;
+    background-color: var(---kakhalgi-machu);
     border-radius: 0 0 20px 20px;
     text-decoration: none;
 }
@@ -84,20 +97,14 @@ div.heading div.version p a:hover {
     text-align: justify;
 }
 
-.heading h2 {
-    font-size: 1.6rem;
-    padding: 0 5rem;
-}
-
 .anisuba-wahanthok {
     padding: 1.5rem 5rem;
-    background-color: #dad8d8;
+    background-color: var(---kakhalgi-machu);
     border-radius: 20px 20px 0 0;
 
 }
 
 .anisuba-wahanthok p {
-    font-size: 1.5rem;
     padding: 1rem 0 1.5rem;
     text-align: justify;
 }
@@ -130,26 +137,26 @@ li {
 }
 
 .mangang {
-    background-color: red;
+    background-color: var(---angangba-machu);
 }
 
 .luwang {
-    background-color: white;
+    background-color: var(---angouba-machu);
 }
 
 .khuman {
-    background-color: black;
-    color: white;
+    background-color: var(---amuba-machu);
+    color: var(---angouba-machu);
 }
 
 .angom {
-    background-color: yellow;
+    background-color: var(---hangampal-machu);
 }
 
 .moirang {
-    background-color: #83092C;
+    background-color: var(---moirang-machu);
     position: relative;
-    color: white;
+    color: var(---angouba-machu);
 }
 
 .moirang::after {
@@ -167,11 +174,11 @@ li {
 }
 
 .kha-nganba {
-    background-color: #7919E4;
+    background-color: var(---petuk-machu);
 }
 
 .salai-leisangthem {
-    background-color: #10F0FF;
+    background-color: var(---sangbanaba-machu);
 }
 
 /* ************************************************************ */
@@ -216,7 +223,7 @@ li {
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
     transition: .4s;
     border-radius: 5px;
-    color: #10F0FF;
+    color: var(---sangbanaba-machu);
 }
 
 .slider:before {
@@ -227,7 +234,7 @@ li {
     border-radius: 0px;
     left: 0.3em;
     bottom: 0.3em;
-    background-color: white;
+    background-color: var(---angouba-machu);
     transition: .4s;
 }
 
@@ -242,8 +249,8 @@ input:checked+.slider:before {
 
 
 /* **************************************************************************** */
-/* wakhanthok */
-.wakhanthok {
+/* wahanthok */
+.wahanthok {
     display: none;
     width: 80%;
     height: fit-content;
@@ -255,82 +262,85 @@ input:checked+.slider:before {
     z-index: 1;
 }
 
-/* Specific wakhanthok background colors */
-.mangang-wakhanthok {
+/* Specific wahanthok background colors */
+.mangang-wahanthok {
     background: #dd0101;
     box-shadow: 20px 20px 60px #a80101,
         -20px -20px 60px #fd0202;
 }
 
-.wakhanthok h1 {
+.wahanthok h1 {
     color: whitesmoke;
 }
 
-.wakhanthok h2 {
+.wahanthok h2 {
     color: whitesmoke;
     padding: 0 0 2rem;
 }
 
-.wakhanthok p {
-    font-size: 1.5rem;
+.wahanthok p {
     height: fit-content;
     text-align: justify;
     padding: 0 2rem;
     color: #f3f3f3;
 }
 
-.luwang-wakhanthok {
+.luwang-wahanthok {
     background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
 }
 
-.luwang-wakhanthok h1,
-.luwang-wakhanthok h2,
-.luwang-wakhanthok p {
-    color: black;
+div#white.wahanthok.luwang-wahanthok button.close-btn {
+    color: var(---amuba-machu);
 }
 
-.khuman-wakhanthok {
+.luwang-wahanthok h1,
+.luwang-wahanthok h2,
+.luwang-wahanthok p {
+    color: var(---amuba-machu);
+}
+
+.khuman-wahanthok {
     background-color: #252525;
     box-shadow: 20px 20px 60px #4b4b4b,
         -20px -20px 60px #070707;
 }
 
-.angom-wakhanthok {
+.angom-wahanthok {
     background-color: #dfdf02;
     box-shadow: 20px 20px 60px #b8b801,
         -20px -20px 60px #fdfd01;
 }
 
-.angom-wakhanthok h1,
-.angom-wakhanthok h2,
-.angom-wakhanthok p {
-    color: black;
+.angom-wahanthok h1,
+.angom-wahanthok h2,
+.angom-wahanthok p {
+    color: var(---amuba-machu);
 }
 
-.moirang-wakhanthok {
-    background-color: #83092C;
+.moirang-wahanthok {
+    background-color: var(---moirang-machu);
     box-shadow: 20px 20px 60px #52061b,
         -20px -20px 60px #c50f42;
 }
 
-.kha-nganba-wakhanthok {
+.kha-nganba-wahanthok {
     background-color: #5d14b1;
     box-shadow: 20px 20px 60px #4f1097,
         -20px -20px 60px #851cfc;
 }
 
-.salai-leisangthem-wakhanthok {
-    background-color: #10F0FF;
+.salai-leisangthem-wahanthok {
+    background-color: var(---sangbanaba-machu);
     box-shadow: 20px 20px 60px #0c97a1,
         -20px -20px 60px #11edfd;
 }
 
-.salai-leisangthem-wakhanthok h1,
-.salai-leisangthem-wakhanthok h2,
-.salai-leisangthem-wakhanthok p {
-    color: black;
+.salai-leisangthem-wahanthok h1,
+.salai-leisangthem-wahanthok h2,
+.salai-leisangthem-wahanthok p {
+    color: var(---amuba-machu);
 }
 
 button {
@@ -344,7 +354,7 @@ button {
     font-weight: bolder;
 }
 
-.ka-khal.expanded .wakhanthok {
+.ka-khal.expanded .wahanthok {
     display: block;
 }
 
@@ -358,7 +368,7 @@ button {
     cursor: pointer;
 }
 
-div.pointer-icon img {
+.pointer-icon img {
     width: 3rem;
     height: 3rem;
 }
@@ -375,6 +385,10 @@ div.pointer-icon img {
 
 }
 
+.pointer-icon.visible {
+    display: block;
+}
+
 @keyframes bounce {
 
     0%,
@@ -385,10 +399,6 @@ div.pointer-icon img {
     50% {
         transform: translateY(-10px) rotateX(20deg);
     }
-}
-
-.visible {
-    display: block;
 }
 
 div.anisuba-wahanthok div.lourakfam {
@@ -429,6 +439,8 @@ div.anisuba-wahanthok div.lourakfam p {
     transition: .5s;
 }
 
+/* *************************************************************** */
+/* Mobile screen optimization */
 @media screen and (max-width: 767px) {
 
     h1 {
@@ -448,16 +460,19 @@ div.anisuba-wahanthok div.lourakfam p {
     .heading {
         text-align: center;
         padding: 0.5rem 0.5rem;
-        background-color: #dad8d8;
+        background-color: var(---kakhalgi-machu);
         border-radius: 0 0 20px 20px;
         text-decoration: none;
     }
 
     div.heading div.version {
         width: 35rem;
-        padding-left: 3.5rem;
-        text-align: center;
+        padding-left: 5.5rem;
         display: inline-block;
+    }
+
+    .ka-khal.expanded {
+        height: 60vh;
     }
 
     div.pointer-icon img {
@@ -472,26 +487,21 @@ div.anisuba-wahanthok div.lourakfam p {
 
     .close-btn {
         position: absolute;
-        margin: -420px 10px;
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: #fff;
-        cursor: pointer;
+        margin: -420px 20px;
     }
 
-    .wakhanthok {
+    .wahanthok {
         width: 90%;
     }
 
-    .wakhanthok p {
+    .wahanthok p {
         font-size: .8rem;
         padding: .6rem;
     }
 
     .anisuba-wahanthok {
         padding: 0.5rem 0.5rem;
-        background-color: #dad8d8;
+        background-color: var(---kakhalgi-machu);
         border-radius: 20px 20px 0 0;
     }
 

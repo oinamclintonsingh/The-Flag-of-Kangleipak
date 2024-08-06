@@ -1,11 +1,11 @@
 function toggleDescription(color) {
     const colorDiv = document.querySelector(`.${color}`);
     const isExpanded = colorDiv.classList.contains('expanded');
-    const descriptions = document.querySelectorAll('.wakhanthok');
+    const descriptions = document.querySelectorAll('.wahanthok');
 
     // Hide all descriptions and collapse all color divs
-    descriptions.forEach(wakhanthok => {
-        wakhanthok.parentElement.classList.remove('expanded');
+    descriptions.forEach(wahanthok => {
+        wahanthok.parentElement.classList.remove('expanded');
     });
 
     // If the clicked color div was not expanded, expand it and show its description
@@ -22,7 +22,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// ********************************************
 
 // *****************************************
 // Khonthok
@@ -30,10 +29,10 @@ let currentAudio = null;
 
 document.querySelectorAll(".khonjel").forEach(button => {
     button.addEventListener("click", function() {
-        // Find the parent wakhanthok element
-        const wakhanthokDiv = this.closest(".wakhanthok");
-        // Get the id of the wakhanthok element
-        const colorId = wakhanthokDiv.id;
+        // Find the parent wahanthok element
+        const wahanthokDiv = this.closest(".wahanthok");
+        // Get the id of the wahanthok element
+        const colorId = wahanthokDiv.id;
         // Stop the currently playing sound and play the new one
         makeSound(colorId);
     });
@@ -107,7 +106,7 @@ const firanElements = document.querySelectorAll('.firan');
 let timeout;
 window.addEventListener('scroll', () => {
     firanElements.forEach(firanElement => {
-        const colorRepresentation = firanElement.querySelector('.wakhanthok');
+        const colorRepresentation = firanElement.querySelector('.wahanthok');
         const pointerIcon = firanElement.querySelector('.pointer-icon');
         
         if (isElementInViewport(colorRepresentation)) {
@@ -115,7 +114,7 @@ window.addEventListener('scroll', () => {
             clearTimeout(timeout);
             timeout = setTimeout(() => {
                 pointerIcon.classList.remove('visible');
-            }, 1000); // Adjust as needed
+            }, 3000); // Adjust as needed
         } else {
             pointerIcon.classList.remove('visible');
         }
