@@ -1,6 +1,6 @@
 # The-Flag-of-Kangleipak
 
-Welcome to the Flag of Kangleipak website repository! This project aims to educate users about the traditional and cultural significance of the Flag of Kangleipak, including its seven colors and their meanings.
+Welcome to the Flag of Kangleipak website repository! The Manipuri Flag! This project aims to educate users about the traditional and cultural significance of the Flag of Kangleipak, including its seven colors and their meanings.
 
 ## Website
 
