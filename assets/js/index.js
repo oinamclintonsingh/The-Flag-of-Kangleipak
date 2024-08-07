@@ -107,7 +107,7 @@ let timeout;
 window.addEventListener('scroll', () => {
     firanElements.forEach(firanElement => {
         const colorRepresentation = firanElement.querySelector('.wahanthok');
-        const pointerIcon = firanElement.querySelector('.pointer-icon');
+        const pointerIcon = firanElement.querySelector('.Khudombina-takpa');
         
         if (isElementInViewport(colorRepresentation)) {
             pointerIcon.classList.add('visible');

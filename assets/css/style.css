@@ -367,12 +367,12 @@ button {
     cursor: pointer;
 }
 
-.pointer-icon img {
+.Khudombina-takpa img {
     width: 3rem;
     height: 3rem;
 }
 
-.pointer-icon {
+.Khudombina-takpa {
     position: absolute;
     top: 50%;
     left: 60rem;
@@ -384,7 +384,7 @@ button {
 
 }
 
-.pointer-icon.visible {
+.Khudombina-takpa.visible {
     display: block;
 }
 
@@ -468,13 +468,13 @@ div.anisuba-wahanthok div.lourakfam p {
         height: 60vh;
     }
 
-    div.pointer-icon img {
+    div.Khudombina-takpa img {
         width: 2rem;
         height: 2rem;
     }
 
-    .pointer-icon {
-        left: 15rem;
+    .Khudombina-takpa {
+        left: 18rem;
 
     }
 
